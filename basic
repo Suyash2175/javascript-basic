@@ -1,0 +1,26 @@
+console.log("hello suyash");
+
+console.log("tate tute mute");
+// variable
+
+let firstname='suyash';
+let lastname='sonwane';
+console.log(firstname, lastname);
+//if u want print first and last in one line use ,
+
+let a;
+a='sss';
+console.log(a);
+/// constant
+
+const myname='shushant';
+console.log(myname);
+
+//variable naming rules
+
+
+let mname='riya';
+console.log(mname);
+
+//data types;
+//string,number,boolean,undefined
