@@ -1,4 +1,4 @@
-///******* CONDITIONALS IN JS
+/// CONDITIONALS IN JS
 //IF ELSE
 
 // let age=19;
