@@ -9,7 +9,7 @@
 // }
 
 
-// ///
+// 
 // let number=10;
 // if(number == 10){
 //     console.log('number is 10')
