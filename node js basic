@@ -1,0 +1,21 @@
+// function sayHello(name){
+//     console.log('hello ' + name);
+// }
+// sayHello('suyash');
+
+//console.log(window); window not defined
+
+//module system in node
+//few of the module  builde in a core of node os,filesystem,events and http
+//console.log();// global object
+//setTimeout()//we used call a function after delays 1 second or 2 second we used in client inside browser inside of node 
+//clearTimeout();
+//setInterval() its will used to repardily call a functoin givrn delays
+//clearInterval() stop that functions call repadly
+
+
+
+
+
+
+
