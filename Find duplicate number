@@ -14,7 +14,4 @@ function findDuplicates(nums) {
     return duplicates;
 }
 
-// Example usage:
-let nums = [4, 3, 2, 7, 8, 2, 3, 1];
-let result = findDuplicates(nums);
-console.log(result); // Output: [2, 3]
+
