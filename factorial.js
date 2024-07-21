@@ -1,6 +1,6 @@
 function factorialIterative(n) {
   if (n < 0) {
-    return -1; // Factorial is not defined for negative numbers
+    return -1; // Factorial is not defined 
   }
   let result = 1;
   for (let i = 1; i <= n; i++) {
