@@ -1,4 +1,4 @@
-// Function to check if a number is prime
+important// Function to check if a number is prime
 function isPrime(num) {
     if (num <= 1) return false; // Numbers less than or equal to 1 are not prime
     if (num <= 3) return true;  // 2 and 3 are prime numbers
