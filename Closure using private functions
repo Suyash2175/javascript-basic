@@ -1,0 +1,32 @@
+function createCounter() {
+  let count = 0; // Private variable
+
+  function increment() {
+    count++;
+    console.log("Count:", count);
+  }
+
+  function decrement() {
+    count--;
+    console.log("Count:", count);
+  }
+
+  function getCount() {
+    return count;
+  }
+
+  return {
+    increment: increment,
+    decrement: decrement,
+    getCount: getCount
+  };
+}
+
+// Usage:
+const counter = createCounter();
+
+counter.increment(); // Output: Count: 1
+counter.increment(); // Output: Count: 2
+counter.decrement(); // Output: Count: 1
+
+console.log("Current Count:", counter.getCount()); // Output: Current Count: 1
