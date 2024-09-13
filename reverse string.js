@@ -1,4 +1,4 @@
-// Function to reverse a string
+// Function to reverse a string interview questions 
 function reverseString(str) {
     return str.split('').reverse().join('');
 }
