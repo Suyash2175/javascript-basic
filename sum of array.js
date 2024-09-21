@@ -4,3 +4,4 @@ function sumArray(arr) {
 
 // Example
 console.log(sumArray([1, 2, 3, 4, 15])); 
+// sum array example 
