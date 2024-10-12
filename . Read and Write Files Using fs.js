@@ -1,3 +1,4 @@
+// read and write file using javascript 
 const fs = require('fs');
 
 function readAndWriteFiles(inputPath, outputPath) {
