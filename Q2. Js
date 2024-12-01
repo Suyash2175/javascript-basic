@@ -1,0 +1,36 @@
+# Load required libraries
+library(ggplot2)
+library(car) # For diagnostics
+library(readr) # For reading CSV files
+
+# Load the data
+data <- read.csv("Desktop/02.csv")
+
+# Perform multiple linear regression
+model <- lm(Y ~ ., data = data)
+
+# (a) Obtain the fit
+summary(model)
+
+# (b) Interpret the summary
+# - Coefficients, p-values, R-squared values can be directly seen from the summary(model)
+
+# (c) Plot Fitted Values vs Observed Responses
+ggplot(data, aes(x = fitted(model), y = Y)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, color = "red") +
+  labs(x = "Fitted Values", y = "Observed Responses", title = "Fitted vs Observed") +
+  theme_minimal()
+
+# (d) Regression diagnostics
+# Check residuals
+par(mfrow = c(2, 2)) # Plot 4 diagnostics in one frame
+plot(model)
+
+# Additional diagnostics
+# Cook's distance
+cooks.distance <- cooks.distance(model)
+plot(cooks.distance, type = "h", main = "Cook's Distance")
+
+# Residual histogram
+hist(residuals(model), breaks = 20, main = "Residual Histogram", col = "blue")
